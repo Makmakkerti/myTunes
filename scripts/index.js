@@ -1,7 +1,12 @@
 import initRadio from './radioPlayer.js';
+import initMusic from './musicPlayer.js';
+import initVideo from './videoPlayer.js';
 
 const playerBtn = document.querySelectorAll('.player-btn');
 const playerBlock = document.querySelectorAll('.player-block');
+
+initMusic();
+initVideo();
 
 const removeActiveClass = (index) => {
   playerBtn.forEach((btn, i) => {
